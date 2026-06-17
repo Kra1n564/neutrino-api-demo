@@ -1,16 +1,18 @@
 # Neutrino API Demo
 
+Example code for Neutrino API — a $5 OpenAI-compatible API with 5 million tokens. Same format, half the cost.
+
 ## Quick Start (Python)
 
-\`\`\`bash
+```bash
 pip install openai
-\`\`\`
+```
 
-\`\`\`python
+```python
 from openai import OpenAI
 
 client = OpenAI(
-    base_url="https://api. 你的域名.com/v1",
+    base_url="https://api.neutrinoitapi.com/v1",
     api_key="your-api-key"
 )
 
@@ -22,15 +24,15 @@ response = client.chat.completions.create(
 )
 
 print(response.choices[0].message.content)
-\`\`\`
+```
 
 ## Streaming (Python)
 
-\`\`\`python
+```python
 from openai import OpenAI
 
 client = OpenAI(
-    base_url="https://api. 你的域名.com/v1",
+    base_url="https://api.neutrinoitapi.com/v1",
     api_key="your-api-key"
 )
 
@@ -43,19 +45,19 @@ stream = client.chat.completions.create(
 for chunk in stream:
     if chunk.choices[0].delta.content:
         print(chunk.choices[0].delta.content, end="")
-\`\`\`
+```
 
 ## Node.js
 
-\`\`\`bash
+```bash
 npm install openai
-\`\`\`
+```
 
-\`\`\`javascript
+```javascript
 import OpenAI from 'openai';
 
 const client = new OpenAI({
-  baseURL: 'https://api. 你的域名.com/v1',
+  baseURL: 'https://api.neutrinoitapi.com/v1',
   apiKey: 'your-api-key',
 });
 
@@ -65,8 +67,10 @@ const response = await client.chat.completions.create({
 });
 
 console.log(response.choices[0].message.content);
-\`\`\`
+```
 
----
+## Pricing
 
-[Get your API key →](https://www.neutrinoitapi.com/)
+$5 for 5 million tokens. One-time. No subscription.
+
+[Get your API key →](https://neutrinoitapi.com)

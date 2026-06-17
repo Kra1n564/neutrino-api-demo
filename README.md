@@ -139,12 +139,5 @@ for chunk in stream:
         print(chunk.choices[0].delta.content, end="")
 ```
 
-点 **"Commit new file"**。
-
----
-
-## 完成之后
-
-你的仓库地址是 `https://github.com/ 你的GitHub用户名/neutrino-api-demo`。这个链接就是你发 Show HN 帖子和 Reddit 帖时要附上的地址。
 
 开发者点进去看到的是 README，里面有完整的 Python 和 Node.js 示例，复制粘贴改个 Key 就能跑。

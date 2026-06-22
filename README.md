@@ -1,3 +1,12 @@
+## Who is this for?
+
+You want to use DeepSeek models, which are much cheaper than OpenAI. But:
+- You don't have a Chinese phone number to register on DeepSeek's platform
+- You don't use Alipay or WeChat to pay
+- You want to pay in USD with a credit card
+- You just want an OpenAI-compatible endpoint that works
+
+→ This demo shows how to use Neutrino API as a drop-in replacement.
 # Neutrino API Demo
 
 Example code for Neutrino API — a $5 OpenAI-compatible API with 5 million tokens. Same format, half the cost.
@@ -69,6 +78,17 @@ const response = await client.chat.completions.create({
 console.log(response.choices[0].message.content);
 ```
 
+## Real example: cut your API bill in half
+
+**Before (OpenAI GPT-4o mini):**
+- $0.15 per 1M input tokens
+- $0.60 per 1M output tokens
+- Must prepay to get started
+
+**After (Neutrino API with DeepSeek):**
+- $5 flat = 5 million tokens total
+- Same /v1/chat/completions endpoint
+- Your existing OpenAI code changes 3 lines
 ## Pricing
 
 $5 for 5 million tokens. One-time. No subscription.
